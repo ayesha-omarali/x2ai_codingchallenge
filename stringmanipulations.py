@@ -29,10 +29,10 @@ def allPermutations(user_input):
 	feeling = lookup('<<FEELING>>')
 	
 	permutations = []
-	for i in name:
+	# r i in name:
 		for j in feeling:
 			permutations += string.replace(user_input, '<<NAME>>', name[i]).replace(user_input, '<<FEELING>>', name[j])
 	
 	return permutations
 
-print allPermutations('Hi, I\'m <<NAME>>, and I feel <<FEELING>>!')
+print(allPermutations('Hi, I\'m <<NAME>>, and I feel <<FEELING>>!'))
